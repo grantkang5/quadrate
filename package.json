@@ -1,0 +1,37 @@
+{
+  "name": "quadrate",
+  "version": "1.0.0",
+  "description": "Styleguide components and redux wrappers",
+  "keywords": [
+    "react",
+    "styled-components",
+    "styleguide",
+    "redux-form"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grant05/quadrate.git"
+  },
+  "author": {
+    "name": "Grant Kang",
+    "email": "grantkang5@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Grant05/quadrate/issues"
+  },
+  "homepage": "https://github.com/Grant05/quadrate#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "styled-components": "^3.2.6"
+  },
+  "peerDependencies": {
+    "react": ">=15.0.0",
+    "styled-components": ">=3.0.0"
+  }
+}
