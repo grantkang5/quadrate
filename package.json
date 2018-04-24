@@ -26,12 +26,14 @@
   },
   "homepage": "https://github.com/Grant05/quadrate#readme",
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "styled-components": "^3.2.6"
   },
   "peerDependencies": {
     "react": ">=15.0.0",
-    "styled-components": ">=3.0.0"
+    "styled-components": ">=3.0.0",
+    "classnames": ">=2.0.0"
   }
 }
