@@ -1,0 +1,51 @@
+.checkbox-label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+
+  .check {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--gray);
+    vertical-align: middle;
+    position: relative;
+
+    .checkmark {
+      visibility: hidden;
+    }
+  }
+
+  .checkbox {
+    &:checked, &:not(:checked) {
+      position: absolute;
+      left: -9999px;
+    }
+
+    &:hover ~ .check:not(.disabled) {
+      border: 1px solid var(--blue);
+    }
+  }
+
+  .checkbox:checked ~ .check {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+
+    .checkmark {
+      visibility: visible;
+      color: #fff;
+    }
+  }
+
+  .text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}

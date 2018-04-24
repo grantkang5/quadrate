@@ -1,0 +1,80 @@
+.toggle {
+  .box {
+    width: 48px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all 200ms ease;
+    // change background color of toggle button
+    &.unchecked {
+      background: var(--light-gray);
+    }
+    &.checked {
+      background: var(--blue);
+
+      &:before {
+        box-shadow: 1px 1px 1px var(--dark-blue);
+        color: var(--blue);
+        left: 25px;
+        top: 2px;
+        content: attr((data-background-checked));
+        padding-left: 1px;
+      }
+    }
+
+    &.disabled {
+      background: var(--light-gray);
+      cursor: not-allowed;
+      &.checked:before {
+        background: var(--light-gray);
+        box-shadow: 0 1px 1px var(--dark-gray);
+        color: var(--gray);
+        left: 25px;
+        top: 2px;
+        content: attr((data-background-checked));
+      }
+      &:not(.checked):before {
+        font-family: "FontAwesome";
+        box-shadow: 0 1px 1px var(--dark-gray);
+        content: attr((data-background-unchecked));
+        color: var(--gray);
+        text-align: center;
+        padding-left: 1px;
+        line-height: 22px;
+        font-size: 11px;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 15px;
+        background: var(--light-gray);
+        left: 2.5px;
+        top: 2px;
+        padding-right: 1px;
+      }
+    }
+
+    // style for toggle button
+    &:before {
+      font-family: "FontAwesome";
+      box-shadow: 1px 1px 1px var(--gray);
+      content: attr((data-background-unchecked));
+      color: var(--dark-gray);
+      text-align: center;
+      line-height: 22px;
+      font-size: 11px;
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 15px;
+      background: #FFF;
+      left: 3px;
+      top: 2px;
+      transition: all 200ms ease;
+    }
+  }
+  // clear default checkbox
+  input {
+    display: none;
+  }
+}

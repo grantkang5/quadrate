@@ -1,0 +1,33 @@
+.textarea {
+  background: center center no-repeat;
+  display: inline-block;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  color: var(--font-color);
+  outline: none;
+  resize: none;
+  padding: 10px 12px;
+  background-color: var(--lightest-gray);
+  // input text styling
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  font-family: var(--font);
+  text-decoration: none;
+
+  &.disabled {
+    cursor: not-allowed;
+    &::placeholder {
+      color: var(--dark-gray);
+    }
+  }
+
+  &:focus {
+    border: 1px solid var(--dark-blue);
+    background-color: #FFF;
+    box-shadow: .1px .1px 1px var(--blue);
+  }
+
+  &.enableResize {
+    resize: both
+  }
+}

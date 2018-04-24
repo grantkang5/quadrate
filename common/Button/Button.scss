@@ -1,0 +1,72 @@
+// Default buttons
+.btn {
+  display: inline-block;
+  color: #FFF;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 200ms ease;
+  font-weight: 300;
+  font-size: 12px;
+
+  &.shouldFitContainer {
+    width: 100%;
+  }
+
+  &.primary {
+    border: 1px solid var(--dark-blue);
+    background-color: var(--blue);
+    &:not(.disabled):hover {
+      background-color: rgba(38, 110, 175, 0.9);
+    }
+  }
+
+  &.secondary {
+    border: 1px solid var(--lightest-gray);
+    color: var(--font-color);
+    background-color: var(--lightest-gray);
+    &:not(.disabled):hover {
+      background-color: darken(#F4F5F7, 4%);
+    }
+  }
+
+  // flat button
+  &.flat {
+    border: 1px solid #FFF;
+    background-color: #FFF;
+    color: var(--font-color);
+    &:not(.disabled):hover {
+      box-shadow: 0 1px 3px 1px var(--light-gray);
+      transform: translateY(-1px);
+    }
+  }
+
+  // success button
+  &.success {
+    background-color: var(--green);
+    border: 1px solid var(--dark-green);
+    &:not(.disabled):hover {
+      background-color: darken(#0CCE6B, 5%);
+      // background-color: var(--dark-green)
+    }
+  }
+
+  // warning button
+  &.danger {
+    background-color: var(--red);
+    border: 1px solid var(--dark-red);
+    &:not(.disabled):hover {
+      background-color: var(--dark-red);
+    }
+  }
+
+  // disabled button
+  &.disabled {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    border: 1px solid var(--light-gray);
+    cursor: not-allowed;
+  }
+}

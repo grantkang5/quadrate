@@ -1,0 +1,44 @@
+.stats-card {
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 20px 40px;
+  background-color: #fff;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+
+    &.labels {
+      margin-bottom: 10px;
+    }
+  }
+
+  .col {
+    flex: 1;
+
+    &.first {
+      flex: 2;
+    }
+  }
+
+  .values {
+    margin: -10px -10px 0px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    border-radius: var(--border-radius);
+
+    .value {
+      // background: lighten(#F4F5F7, 1%);
+      // padding: 20px 0;
+      // margin: 0 10px;
+      //
+      // &:hover {
+      //   transition: all 500ms ease;
+      //   background: linear-gradient(45deg, #f7f8f9, #F4F5F7);
+      // }
+    }
+  }
+}

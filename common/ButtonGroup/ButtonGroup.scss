@@ -1,0 +1,38 @@
+.button {
+  display: inline-block;
+  .button-item {
+    background-color: #FFF;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--font-color);
+    float: left;
+    border: none;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    border-left: 1px solid var(--light-gray);
+
+    &:first-child {
+      border-radius: 3px 0 0 3px;
+    }
+
+    &:last-child {
+      border-radius: 0 3px 3px 0;
+      border-right: 1px solid var(--light-gray);
+    }
+
+    &.selected {
+      background-color: var(--navy-blue);
+      color: #FFF;
+    }
+    &.disabled {
+      background-color: var(--light-gray);
+      border: 1px solid var(--light-gray);
+      cursor: not-allowed;
+      color: var(--dark-gray);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.tabs {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--light-gray);
+
+  .tab-item {
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    user-select: none;
+    flex: 1;
+    // padding-bottom: 20px;
+    height: 40px;
+
+    &.selected {
+      transition: border 150ms ease;
+      border-bottom: 3px solid var(--blue);
+    }
+
+    &.disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    &:not(.disabled):hover {
+      color: var(--blue);
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.dropdown {
+  height: 36px;
+  vertical-align: middle;
+  padding: 10px 12px;
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  min-width: 105px;
+  max-width: 375px;
+
+  &.open {
+    background-color: var(--navy-blue);
+    color: #fff;
+  }
+
+  .chevron-down {
+    font-size: 9px;
+    margin-left: 12px;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    transition: transform 100ms;
+
+    &:before {
+      position: absolute;
+      top: 0;
+    }
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.icon-dropdown {
+  cursor: pointer;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: relative;
+  background-color: transparent;
+
+  &:hover {
+    background-color: var(--light-gray);
+  }
+
+  > span {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.options {
+  opacity: 0;
+  position: absolute;
+  background-color: #fff;
+  min-width: 100%;
+  border: 1px solid var(--gray);
+  top: 44px;
+  padding: 6px 0;
+  border-radius: var(--border-radius);
+  transition: opacity 150ms;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 8px 6px -6px var(--dark-gray);
+  max-width: 375px;
+
+  &.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .option {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    max-width: 375px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+
+    &:not(.disabled):hover {
+      background-color: var(--light-gray);
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      height: 14px;
+    }
+
+    .text {
+      padding-left: 40px;
+    }
+  }
+}

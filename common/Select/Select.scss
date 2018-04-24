@@ -1,0 +1,128 @@
+.dropdown {
+  vertical-align: middle;
+  background-color: var(--lightest-gray);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--light-gray);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  box-sizing: border-box;
+  min-width: 105px;
+  overflow: hidden;
+  min-height: 36px;
+
+  &.disabled {
+    cursor: not-allowed;
+    color: var(--gray);
+  }
+
+  &.open {
+    background-color: #fff;
+    border: 1px solid var(--dark-blue);
+    box-shadow: 0.1px 0.1px 1px var(--blue);
+  }
+
+  > input {
+    height: 100%;
+    min-height: 36px;
+    border: none;
+    padding: 0 25px 0 10px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    text-overflow: ellipsis;
+    background-color: var(--lightest-gray);
+    max-width: 100%;
+    vertical-align: top;
+    display: inline-block;
+    margin-bottom: 5px;
+
+    &.open {
+      background-color: #fff;
+    }
+  }
+
+  .chevron-down {
+    font-size: 9px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 100ms;
+
+    &.open {
+      transform: rotate(180deg) translateY(50%);
+    }
+  }
+
+  .pill {
+    display: inline-block;
+    background-color: #E1E6E8;
+    border-radius: var(--border-radius);
+    padding: 3px 22px 3px 6px;
+    margin: 5px 0 0 5px;
+    cursor: auto;
+    position: relative;
+    max-width: calc(100% - 35px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 65px;
+
+    .close {
+      font-size: 10px;
+      width: 20px;
+      text-align: center;
+      height: 23px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      line-height: 23px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}
+
+.options {
+  opacity: 0;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid var(--gray);
+  top: calc(100% + 8px);
+  padding: 6px 0;
+  border-radius: var(--border-radius);
+  transition: opacity 150ms;
+  pointer-events: none;
+  z-index: 10;
+  max-height: 250px;
+  overflow-y: scroll;
+  box-shadow: 0 8px 6px -6px var(--dark-gray);
+
+  &.open {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .option {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:not(.disabled):hover {
+      background-color: var(--light-gray);
+    }
+
+    &.disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+}
