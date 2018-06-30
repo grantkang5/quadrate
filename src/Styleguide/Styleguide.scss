@@ -1,0 +1,23 @@
+.styleguide {
+  width: 1080px;
+  margin: 100px auto;
+
+  .subheader {
+    margin: 0 auto;
+    display: inline-block;
+
+    hr {
+      display: inline-block;
+      width: 50px;
+      line-height: 40px;
+      vertical-align: middle;
+      border: 0;
+      height: 1px;
+      background-color: var(--light-gray);
+    }
+
+    span {
+      margin: 0 15px;
+    }
+  }
+}

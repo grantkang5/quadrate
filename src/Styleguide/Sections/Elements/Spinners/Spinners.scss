@@ -1,0 +1,18 @@
+.spinners {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    p {
+      flex: 0 0 calc(100%);
+    }
+
+    .radio {
+      flex: 0 0 calc(100%);
+    }
+  }
+}

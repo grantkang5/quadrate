@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // Components
-import { Select } from 'Components/Common'
+import { Select } from '../../../common'
 
 const errorStyle = {
   color: '#FE4A49',

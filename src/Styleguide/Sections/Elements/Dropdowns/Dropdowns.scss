@@ -1,0 +1,15 @@
+.dropdowns {
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    > div {
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
 // Components
-import { Spinner } from 'Components/Common'
+import { Spinner } from '../../../common'
 
 // CSS
 import './Button.scss'

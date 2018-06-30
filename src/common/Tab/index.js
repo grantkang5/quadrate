@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import { QuzeLink } from 'Components/Common'
+import { QuzeLink } from '../../../common'
 
 // CSS
 import './Tab.scss'

@@ -1,0 +1,17 @@
+.tabs {
+  margin: 0 auto;
+
+  > div {
+    flex: 1;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    p {
+      flex: 0 0 calc(100%);
+    }
+
+    .radio {
+      flex: 0 0 calc(100%);
+    }
+  }
+}
