@@ -1,16 +1,16 @@
-/* eslint no-undef: 0 */
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { hot } from 'react-hot-loader'
 
-// Components
-import Styleguide from './Styleguide'
+import Styleguide from 'Components/Styleguide'
 
-// Global CSS
-import './assets/main.scss'
+import './Assets/Main.scss'
 
-const rootEl = document.getElementById('styleguide')
+class App extends React.Component {
+  render() {
+    return (
+      <Styleguide />
+    )
+  }
+}
 
-ReactDOM.render(
-  <Styleguide />,
-  rootEl
-)
+export default hot(module)(App)
