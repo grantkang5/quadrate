@@ -12,53 +12,40 @@
     }
     &.checked {
       background: var(--blue);
-
-      &:before {
-        box-shadow: 1px 1px 1px var(--dark-blue);
-        color: var(--blue);
-        left: 25px;
-        top: 2px;
-        content: attr((data-background-checked));
-        padding-left: 1px;
-      }
     }
 
     &.disabled {
       background: var(--light-gray);
       cursor: not-allowed;
-      &.checked:before {
-        background: var(--light-gray);
-        box-shadow: 0 1px 1px var(--dark-gray);
-        color: var(--gray);
-        left: 25px;
-        top: 2px;
-        content: attr((data-background-checked));
-      }
-      &:not(.checked):before {
-        font-family: "FontAwesome";
-        box-shadow: 0 1px 1px var(--dark-gray);
-        content: attr((data-background-unchecked));
-        color: var(--gray);
-        text-align: center;
-        padding-left: 1px;
-        line-height: 22px;
-        font-size: 11px;
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        border-radius: 15px;
-        background: var(--light-gray);
-        left: 2.5px;
-        top: 2px;
-        padding-right: 1px;
-      }
     }
 
-    // style for toggle button
-    &:before {
-      font-family: "FontAwesome";
+  }
+  // clear default checkbox
+  input {
+    display: none;
+  }
+
+  .check {
+    border-radius: 15px;
+    height: 20px;
+    width: 20px;
+    transition: all 200ms ease;
+    position: absolute;
+    background-color: #FFF;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.checked {
+      box-shadow: 1px 1px 1px var(--dark-blue);
+      color: var(--blue);
+      left: 25px;
+      top: 2px;
+      padding-left: 1px;
+    }
+    &.unchecked {
       box-shadow: 1px 1px 1px var(--gray);
-      content: attr((data-background-unchecked));
       color: var(--dark-gray);
       text-align: center;
       line-height: 22px;
@@ -72,9 +59,10 @@
       top: 2px;
       transition: all 200ms ease;
     }
-  }
-  // clear default checkbox
-  input {
-    display: none;
+    &.disabled {
+      background: var(--light-gray);
+      box-shadow: 0 1px 1px var(--dark-gray);
+      color: var(--gray)
+    }
   }
 }

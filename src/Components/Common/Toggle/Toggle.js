@@ -12,6 +12,12 @@ const Toggle = ({ checked, onChange, disabled, toggleStyles, ...inputProps }) =>
     unchecked: !checked
   })
 
+  const checkIcon = classNames('check', {
+    checked,
+    unchecked: !checked,
+    disabled
+  })
+
   return (
     <label styleName="toggle" style={toggleStyles}>
       <input
@@ -24,7 +30,11 @@ const Toggle = ({ checked, onChange, disabled, toggleStyles, ...inputProps }) =>
         styleName={checkedClass}
         data-background-checked="&#xf00c;"
         data-background-unchecked="&#xf00d;"
-      />
+      >
+        <div styleName={checkIcon}>
+          <i className="fas fa-check" style={{ fontSize: '1rem' }} />
+        </div>
+      </div>
     </label>
   )
 }
