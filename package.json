@@ -12,7 +12,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --inline --hot",
     "build": "webpack --mode production",
-    "heroku-postbuild": "echo Skip build on Heroku"
+    "heroku-postbuild": "webpack --mode production"
   },
   "repository": {
     "type": "git",
