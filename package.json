@@ -10,9 +10,9 @@
   ],
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --inline --hot",
-    "build": "webpack --mode production",
-    "heroku-postbuild": "webpack --mode production"
+    "dev": "webpack-dev-server --mode development --open --inline --hot",
+    "start": "webpack --mode production",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "repository": {
     "type": "git",
