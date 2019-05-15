@@ -90,7 +90,7 @@ class Dropdowns extends React.Component {
               wrapperStyle={{ marginTop: '15px' }}
               icon={
                 <i
-                  className='fa fa-bitcoin'
+                  className='fab fa-bitcoin'
                   style={{ fontSize: '22px', marginLeft: '1.5px', marginTop: '0.5px' }}
                 />
               }
@@ -116,7 +116,7 @@ class Dropdowns extends React.Component {
               verticalReverse
               icon={
                 <i
-                  className='fa fa-rebel'
+                  className='fab fa-bitcoin'
                   style={{ fontSize: '22px', marginLeft: '1.5px', marginTop: '0.5px' }}
                 />
               }
@@ -142,7 +142,7 @@ class Dropdowns extends React.Component {
               horizontalReverse
               icon={
                 <i
-                  className='fa fa-moon-o'
+                  className='fas fa-moon'
                   style={{ fontSize: '22px', marginLeft: '1.5px', marginTop: '0.5px' }}
                 />
               }
@@ -167,7 +167,7 @@ class Dropdowns extends React.Component {
               wrapperStyle={{ marginTop: '15px' }}
               icon={
                 <i
-                  className='fa fa-diamond'
+                  className='far fa-gem'
                   style={{ fontSize: '22px', marginLeft: '0.5px', marginTop: '0.5px' }}
                 />
               }
