@@ -1,7 +1,8 @@
 # Quadrate
 Styleguide and guidelines for curated components, typography and colors used for Quze. 
-
+![](quadrate-example.gif)
 ### Demo
+[https://quadrate.herokuapp.com/](https://quadrate.herokuapp.com/)
 ```
 npm install && npm run start
 ```
