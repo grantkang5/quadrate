@@ -1,6 +1,7 @@
 # Quadrate
 Styleguide and guidelines for curated components, typography and colors used for Quze. 
-![](https://media.giphy.com/media/U7yCdPgZfL7GBxHq9z/giphy.gif)
+<p align="center"><img src='https://media.giphy.com/media/U7yCdPgZfL7GBxHq9z/giphy.gif' /></p>
+
 ### Demo
 [https://quadrate.herokuapp.com/](https://quadrate.herokuapp.com/)
 ```
