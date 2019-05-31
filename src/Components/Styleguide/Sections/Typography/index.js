@@ -35,15 +35,15 @@ const Typography = () => (
         </div>
 
         <h1 styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h1>
 
         <h1 className='semibold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h1>
 
         <h1 className='bold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h1>
       </div>
 
@@ -55,15 +55,15 @@ const Typography = () => (
         </div>
 
         <h2 styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h2>
 
         <h2 className='semibold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h2>
 
         <h2 className='bold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h2>
       </div>
 
@@ -75,15 +75,15 @@ const Typography = () => (
         </div>
 
         <h3 styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h3>
 
         <h3 className='semibold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h3>
 
         <h3 className='bold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h3>
       </div>
 
@@ -95,15 +95,15 @@ const Typography = () => (
         </div>
 
         <h4 styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h4>
 
         <h4 className='semibold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h4>
 
         <h4 className='bold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </h4>
       </div>
 
@@ -115,15 +115,15 @@ const Typography = () => (
         </div>
 
         <p styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </p>
 
         <p className='semibold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </p>
 
         <p className='bold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </p>
       </div>
 
@@ -135,15 +135,15 @@ const Typography = () => (
         </div>
 
         <p className='small' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </p>
 
         <p className='small semibold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </p>
 
         <p className='small bold' styleName='cell'>
-          The slow brown fox jumps over the lazy dog.
+          The quick brown fox jumps over the lazy dog.
         </p>
       </div>
     </div>
