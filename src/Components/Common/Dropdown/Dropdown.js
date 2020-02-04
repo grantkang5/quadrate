@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-// CSS
 import './Dropdown.scss'
 
 class Dropdown extends React.Component {
