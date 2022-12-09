@@ -30,7 +30,7 @@
   "homepage": "https://github.com/Grant05/quadrate#readme",
   "dependencies": {
     "classnames": "^2.2.5",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-styled-flexboxgrid": "^2.4.0",
